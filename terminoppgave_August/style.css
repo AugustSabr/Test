@@ -1,0 +1,492 @@
+/*her begyner den gennerelle css koden*/
+
+
+
+body{
+  background-color: #3b3b3b; /*background-color brukes for å endre backrundsfargen til et element*/
+}
+
+.innpakning {
+  flex: 1; /*flex er en kombinasjon av flex-grow, flex-shrink, og flex-basis, flex bestemmer størrelse*/
+  padding: 5px; /*padding bestemmer hvor langt noe inni et element er fra kantene til elementet*/
+  display: flex; /* display bestemmer hvordan type element noe er, du kan bruke block for å få noen innebygde funksjoner eller flex for å endre til en flex-box*/
+  align-content: flex-start;
+  margin: 30px auto; /*margin bestemmer hvor langt et element er fra andre elementer*/
+  width: 80%; /*width bestemmer bredden til et element*/
+  flex-wrap: wrap;
+}
+
+.header {
+  height: calc(80vh - 110px); /*height bestemmer høyden til et element*/ /*calc kalkulerer hvis du har en enhet som skal regnes med en annen type enhet*/
+  width: 100%; /*width bestemmer bredden til et element*/
+  border: 1px solid white; /*border setter en kantlinje rundt elementet*/
+}
+
+.nav {
+  background-color: #3b3b3b; /*background-color brukes for å endre backrundsfargen til et element*/
+  width: 100%; /*width bestemmer bredden til et element*/
+  margin-bottom: 30px; /*margin-bottom bestemmer hvor langt bunnen til et element er fra toppen til andre elementer*/
+  display: flex; /* display bestemmer hvordan type element noe er, du kan bruke block for å få noen innebygde funksjoner eller flex for å endre til en flex-box*/
+  height: 60px; /*height bestemmer høyden til et element*/
+  position: sticky;
+  top: 0;
+  margin-left: auto; /*margin-left bestemmer hvor langt venstresiden til et element er fra høyresiden til andre elementer*/
+}
+
+.nav a {
+  text-decoration: none; /*text-decoration bestemmer dekorasjonen til teksten, den kan f.eks bli fet, kursiv eller bli understreket*/
+  display: flex; /* display bestemmer hvordan type element noe er, du kan bruke block for å få noen innebygde funksjoner eller flex for å endre til en flex-box*/
+  text-align: center; /*text-align bestemmer hvordan teksten skal være sentrert*/
+  height: 50px; /*height bestemmer høyden til et element*/
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px; /*margin-left bestemmer hvor langt venstresiden til et element er fra høyresiden til andre elementer*/
+}
+
+.nav #index{
+  color: white; /*color bestemmer hvilken farge et element bruker, det påvirker tekstfarge og kantfarge hvis du bruker border*/
+}
+
+.nav #termin{
+  color: #3C52A4; /*color bestemmer hvilken farge et element bruker, det påvirker tekstfarge og kantfarge hvis du bruker border*/
+}
+
+.nav #design{
+  color: #4067B1; /*color bestemmer hvilken farge et element bruker, det påvirker tekstfarge og kantfarge hvis du bruker border*/
+}
+
+.nav #portefolje{
+  color: #3395D2; /*color bestemmer hvilken farge et element bruker, det påvirker tekstfarge og kantfarge hvis du bruker border*/
+}
+
+.nav #medie{
+  color: #59C9E4; /*color bestemmer hvilken farge et element bruker, det påvirker tekstfarge og kantfarge hvis du bruker border*/
+}
+
+.nav #about{
+  color: #65C5B5; /*color bestemmer hvilken farge et element bruker, det påvirker tekstfarge og kantfarge hvis du bruker border*/
+}
+
+.nav a img{
+  width: 50px; /*width bestemmer bredden til et element*/
+}
+
+.nav a:first-child{
+  margin-right: auto; /*margin-left bestemmer hvor langt høyresiden til et element er fra venstresiden til andre elementer*/
+}
+/*
+.nav a:hover {
+  color: white;
+  background-color: red;
+
+  opacity: 0;
+  transform: translateY(4px);
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+}
+
+.nav #active {
+  
+}
+*/
+.content {
+  display: flex;  /* display bestemmer hvordan type element noe er, du kan bruke block for å få noen innebygde funksjoner eller flex for å endre til en flex-box*/
+  flex-basis: 100%;
+  margin: 30px auto; /*margin bestemmer hvor langt et element er fra andre elementer*/
+  flex-wrap: wrap;
+  color: white; /*color bestemmer hvilken farge et element bruker, det påvirker tekstfarge og kantfarge hvis du bruker border*/
+}
+
+.content .text{
+  margin: 5px; /*margin bestemmer hvor langt et element er fra andre elementer*/
+  flex-direction: column;
+}
+
+.content .whitebox {
+  background-color: white; /*background-color brukes for å endre backrundsfargen til et element*/
+  color: black; /*color bestemmer hvilken farge et element bruker, det påvirker tekstfarge og kantfarge hvis du bruker border*/
+  display: flex; /* display bestemmer hvordan type element noe er, du kan bruke block for å få noen innebygde funksjoner eller flex for å endre til en flex-box*/
+  flex: 1; /*flex er en kombinasjon av flex-grow, flex-shrink, og flex-basis, flex bestemmer størrelse*/
+}
+
+.content .img{
+  margin: 5px; /*margin bestemmer hvor langt et element er fra andre elementer*/
+  flex: 1; /*flex er en kombinasjon av flex-grow, flex-shrink, og flex-basis, flex bestemmer størrelse*/
+  display: flex; /* display bestemmer hvordan type element noe er, du kan bruke block for å få noen innebygde funksjoner eller flex for å endre til en flex-box*/
+}
+
+.content h1, h2 {
+  margin-bottom: 0px; /*margin-bottom bestemmer hvor langt bunnen til et element er fra toppen til andre elementer*/
+}
+
+.content p{
+  font-size: 50;
+}
+
+.content ul {
+  margin-top: 0px; /*margin-bottom bestemmer hvor langt bunnen til et element er fra toppen til andre elementer*/
+}
+
+.footer {
+  color: white; /*color bestemmer hvilken farge et element bruker, det påvirker tekstfarge og kantfarge hvis du bruker border*/
+  justify-content: center;
+  flex: 1; /*flex er en kombinasjon av flex-grow, flex-shrink, og flex-basis, flex bestemmer størrelse*/
+  height: 160px; /*height bestemmer høyden til et element*/
+  margin-bottom: 0; /*margin-bottom bestemmer hvor langt bunnen til et element er fra toppen til andre elementer*/
+  flex-direction: column;
+  border: 1px solid; /*border setter en kantlinje rundt elementet*/
+}
+
+.footer #info {
+  width: 100%; /*width bestemmer bredden til et element*/
+  justify-content: center;
+  flex: 1; /*flex er en kombinasjon av flex-grow, flex-shrink, og flex-basis, flex bestemmer størrelse*/
+  display: flex; /* display bestemmer hvordan type element noe er, du kan bruke block for å få noen innebygde funksjoner eller flex for å endre til en flex-box*/
+  flex-direction: row;
+}
+
+.footer #info2 {
+  flex: 1; /*flex er en kombinasjon av flex-grow, flex-shrink, og flex-basis, flex bestemmer størrelse*/
+  display: flex; /* display bestemmer hvordan type element noe er, du kan bruke block for å få noen innebygde funksjoner eller flex for å endre til en flex-box*/
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer #info2 div {
+  width: 200px; /*width bestemmer bredden til et element*/
+  margin: 10px; /*margin bestemmer hvor langt et element er fra andre elementer*/
+}
+
+.footer #info2 div:first-child{
+  justify-content: flex-start;
+}
+
+.footer #info2 div:last-child p a{
+  color: #3395D2;
+}
+
+
+
+/*her slutter den generelle css koden*/
+/*her begynner css koden for index-siden*/
+
+
+
+.hjem .content .whitebox .text {
+  flex: 2;
+  min-height: 200px; /*min-height bestemmer minimums høyden til et element*/
+}
+
+.hjem .content .whitebox .img{
+  margin: 20px;
+  justify-content: end;
+  flex: 1;
+  height: 400px;
+}
+
+.hjem .content .whitebox .img iframe{
+  height: 100%;
+  flex: 1;
+}
+
+
+
+/*her slutter css koden for index-siden*/
+/*her begynner css koden for termin-siden*/
+
+
+
+.termin .content {
+  flex-direction: column;
+}
+
+.termin .content div {
+  display: flex; /* display bestemmer hvordan type element noe er, du kan bruke block for å få noen innebygde funksjoner eller flex for å endre til en flex-box*/
+  width: 100%; /*width bestemmer bredden til et element*/
+  margin-top: 30px; /*margin-top bestemmer hvor langt toppen til et element er fra bunnen til andre elementer*/
+}
+
+.termin .content .whitebox {
+  flex-direction: row;
+}
+
+.termin .content .text {
+  flex: 1; /*flex er en kombinasjon av flex-grow, flex-shrink, og flex-basis, flex bestemmer størrelse*/
+  min-height: 300px; /*min-height bestemmer minimums høyden til et element*/
+}
+
+.termin .content .whitebox #timeplan {
+  flex: 2; /*flex er en kombinasjon av flex-grow, flex-shrink, og flex-basis, flex bestemmer størrelse*/
+  margin: 5px; /*margin bestemmer hvor langt et element er fra andre elementer*/
+}
+
+.termin .content .whitebox #timeplan img{
+  margin: auto; /*margin bestemmer hvor langt et element er fra andre elementer*/
+  width: 100%; /*width bestemmer bredden til et element*/
+  margin-top: 20px; /*margin-top bestemmer hvor langt toppen til et element er fra bunnen til andre elementer*/
+}
+
+.termin .content #flytkart {
+  width: 65%; /*width bestemmer bredden til et element*/
+  margin: 5px; /*margin bestemmer hvor langt et element er fra andre elementer*/
+}
+
+.termin .content #flytkart img{
+  margin: auto; /*margin bestemmer hvor langt et element er fra andre elementer*/
+  width: 100%; /*width bestemmer bredden til et element*/
+  margin-top: 20px; /*margin-top bestemmer hvor langt toppen til et element er fra bunnen til andre elementer*/
+}
+
+.termin .content #skisser{
+  width: 65%; /*width bestemmer bredden til et element*/
+  margin: 5px; /*margin bestemmer hvor langt et element er fra andre elementer*/
+  min-height: 40vh; /*height bestemmer høyden til et element*/
+  border: 1px solid;
+}
+
+.termin .content #skisser iframe{
+  height: 100%;
+  width: 100%;
+}
+
+
+
+/*her slutter css koden for termin-siden*/
+/*her begynner css koden for design-siden*/
+
+
+
+.design .content {
+  flex-direction: column; /* plasserer innholdet i en rad */
+}
+
+.design .content div {
+  display: flex; /* display bestemmer hvordan type element noe er, du kan bruke block for å få noen innebygde funksjoner eller flex for å endre til en flex-box*/
+}
+
+.design .content div .text {
+  flex: 1; /*flex er en kombinasjon av flex-grow, flex-shrink, og flex-basis, flex bestemmer størrelse*/
+  min-height: 300px; /*min-height bestemmer minimums høyden til et element*/
+}
+
+.design .content .whitebox {
+  justify-content: center;
+  min-height: 800px; /*min-height bestemmer minimums høyden til et element*/
+}
+
+.design .content .whitebox #manual {
+  margin: 5%; /*margin bestemmer hvor langt et element er fra andre elementer*/
+  border: 1px solid; /*border setter en kantlinje rundt elementet*/
+  display: flex; /* display bestemmer hvordan type element noe er, du kan bruke block for å få noen innebygde funksjoner eller flex for å endre til en flex-box*/
+  flex: 1; /*flex er en kombinasjon av flex-grow, flex-shrink, og flex-basis, flex bestemmer størrelse*/
+}
+
+.design .content .whitebox #manual iframe{
+  height: 100%;
+  width: 100%;
+}
+
+
+/*her slutter css koden for design-siden*/
+/*her begynner css koden for portefolje-siden*/
+
+
+
+.portefolje .content {
+  flex-direction: column; /* plasserer innholdet i en rad */
+}
+
+.portefolje .content div {
+  flex: 1; /*flex er en kombinasjon av flex-grow, flex-shrink, og flex-basis, flex bestemmer størrelse*/
+  display: flex; /* display bestemmer hvordan type element noe er, du kan bruke block for å få noen innebygde funksjoner eller flex for å endre til en flex-box*/
+}
+
+.portefolje .content .text {
+  flex: 1; /*flex er en kombinasjon av flex-grow, flex-shrink, og flex-basis, flex bestemmer størrelse*/
+}
+
+.portefolje .content .whitebox {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.portefolje .content .whitebox div{
+  flex-direction: column;
+}
+
+.portefolje .content .whitebox div .img {
+  border: 1px solid; /*border setter en kantlinje rundt elementet*/
+  flex-direction: column;
+  height: 300px; /*height bestemmer høyden til et element*/
+}
+
+.portefolje .content .whitebox div .img img{
+  height: 300px; /*height bestemmer høyden til et element*/
+  margin: auto; /*margin bestemmer hvor langt et element er fra andre elementer*/
+  width: 100%; /*width bestemmer bredden til et element*/
+}
+
+.portefolje .content .whitebox div .text {
+  min-height: 250px; /*min-height bestemmer minimums høyden til et element*/
+}
+
+
+
+/*her slutter css koden for portefolje-siden*/
+/*her begynner css koden for medie-siden*/
+
+
+
+.medie .content div {
+  width: 100%; /*width bestemmer bredden til et element*/
+  display: flex; /* display bestemmer hvordan type element noe er, du kan bruke block for å få noen innebygde funksjoner eller flex for å endre til en flex-box*/
+}
+
+.medie .content div .text {
+  flex: 3;
+  min-height: 200px; /*min-height bestemmer minimums høyden til et element*/
+}
+
+.medie .content div .text a{
+  color: #3395D2;
+}
+
+.medie .content div .img {
+  flex: 1;
+  height: 400px; /*height bestemmer høyden til et element*/
+}
+
+
+
+/*her slutter css koden for medie-siden*/
+/*her begynner css koden for about-siden*/
+
+
+
+.about .content .whitebox .text {
+  width: 70%; /*width bestemmer bredden til et element*/
+  min-height: 200px; /*min-height bestemmer minimums høyden til et element*/
+}
+
+.about .content .whitebox .img {
+  height: 400px; /*height bestemmer høyden til et element*/
+  border: 1px solid; /*border setter en kantlinje rundt elementet*/
+}
+
+.about .content .whitebox .img img{
+  max-width: 1000px;
+  height: auto;
+}
+
+
+
+/*her slutter css koden for about-siden*/
+/*her begynner css koden for oppdrag 2*/
+
+
+
+.oppdrag2 .content {
+  flex-direction: column;
+}
+
+.oppdrag2 .content div {
+  display: flex; /* display bestemmer hvordan type element noe er, du kan bruke block for å få noen innebygde funksjoner eller flex for å endre til en flex-box*/
+}
+
+.oppdrag2 .content #div1 {
+  flex-direction: column;
+}
+
+.oppdrag2 .content #div1 .img1 img{
+  width: 300px;
+  height: 300px;
+}
+
+.oppdrag2 .content #div1 .img2 img{
+  min-width: 686px;
+  min-height: 210px;
+}
+
+.oppdrag2 .content .img3 img{
+  min-width: 240px;
+  min-height: 480px;
+}
+
+.oppdrag2 .content .whitebox {
+  flex-direction: column;
+}
+
+.oppdrag2 .content .whitebox div img {
+  width: 100%; /*width bestemmer bredden til et element*/
+  height: 100%; /*height bestemmer høyden til et element*/
+}
+
+.oppdrag2 .content .whitebox #manual{
+  margin: 5%; /*margin bestemmer hvor langt et element er fra andre elementer*/
+  border: 1px solid; /*border setter en kantlinje rundt elementet*/
+  display: flex; /* display bestemmer hvordan type element noe er, du kan bruke block for å få noen innebygde funksjoner eller flex for å endre til en flex-box*/
+  width: 90%; /*width bestemmer bredden til et element*/
+  height: 80vh;
+}
+
+.oppdrag2 .content .whitebox #manual iframe{
+  width: 100%; /*width bestemmer bredden til et element*/
+}
+
+
+
+/*her slutter css koden for oppdrag 2*/
+/*her begynner css koden for responsivt design*/
+
+
+
+@media (max-width: 768px) {
+  .nav {
+    flex-flow: column;
+    height: 300px; /*height bestemmer høyden til et element*/
+    width: 100%;
+    position: inherit;
+  }
+  .nav a {
+    align-items: center;
+    width: 100%; /*width bestemmer bredden til et element*/
+    margin-left: 0;
+  }
+  .content .whitebox{
+    flex: 1;
+  }
+  .footer{
+    width: 100%;
+  }
+
+  .content .whitebox{
+    flex-direction: column;
+  }
+  .content div{
+    flex-direction: column;
+  }
+
+  .portefolje .content .whitebox div{
+    width: 100%;
+  }
+}  
+
+
+
+/*Notater:
+
+export: save for web legecy
+lag placeholder først
+Png er losles komprisjon, men svg er bedre
+create outlines, for å huske fonten
+
+
+header
+filnavn
+active/hoover
+timeplan
+
+fonten naza
+pixel bilder
+
+cisv link og bildet kreditt
+*/

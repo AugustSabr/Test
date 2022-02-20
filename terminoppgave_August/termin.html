@@ -1,0 +1,128 @@
+
+
+<!DOCTYPE html>
+<html>
+
+  <head> <!--Her begyner head-elementet som inneholder all metadata som ikke skal vises på netsiden-->
+    <meta charset="utf-8"> <!--definerer tegnsettet som brukes-->
+    <meta name="author" content="August Brynsrud"> <!--forteller nettleseren hvem som har laget sidens-->
+    <meta name="description" content="Superkul nettside"> <!--gir nettleseren en beskrivelse av nettsiden-->
+    <meta name="keywords" content="personal"/> <!--hjelper søkemotoren til å vite hva som er på siden, noe den kan bruke når andre søker seg fram til nettsiden din-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--dette gjør at siden er kompatibel med tiligere microsoft edge versoner som IE8 og IE9-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--dette gir nettleseren instruksjoner om hvordan den skal kontrollerer sidens dimensjoner og skalering. -->
+    <meta name="robots" content="unavailable_after: 2022-06-17"><!--dete forteler søkemotoren at den ikke skal promotere nettsiden min etter 17.06.2022 som er siste skoledag i vg1(siden har ikke domene så det endrer egentlig ingen ting)-->
+    <title>Terminoppgaven - August</title> <!--dette er titelen på siden, du kan se titelen i fanen på nettleseren-->
+    <link href="../style.css" rel="stylesheet" type="text/css" /> <!--dette binder html dokumentet til css dokumentet-->
+    <meta name="rating" content="adult" /><!--flager netsiden min som "adult content"-->
+    <link rel="shortcut icon" type="image/x-icon" href="Bilder/Logo_August.svg" /> <!--dette er favicon-et til netsiden, favicon er den lille logoen ved siden av titelen på siden i browser tab-en-->
+  </head> <!--her slutter head-elementet-->
+
+  <body> <!--her begyner body-en alt som skal vises på en nettside må innenfor body-en-->
+    <div class="termin innpakning">  <!--Her begyner hjem div-en og innpaknings div-en som dekker helle hjem siden-->
+
+      <div class="nav"> <!--Her begyner nav div-en-->
+        <a href="index.html">
+          <img src="Bilder/Logo_August.svg" alt="Logo">
+
+        <a href="index.html" id="index">Hjemmeside</a>
+        <a href="termin.html" id="termin" id="active">Terminoppgaven</a>
+        <a href="design.html" id="design">Designmanual</a>
+        <a href="portefolje.html" id="portefolje">Pørtefølje</a>
+        <a href="medie.html" id="medie">Medieelementer</a>
+        <a href="about.html" id="about">About me</a>
+      </div> <!--Her slutter nav div-en-->
+
+      <div class="content"> <!--Her begyner content div-en-->
+        <div class="text">
+          <h1>Info om terminoppgaven</h1>
+          <p>I denne oppgaven skulle jeg lage min personlige hjemmeside som viser 
+            både arbeid, kunnskapene mine og hvem jeg er. Hjemmesiden skal ha en 
+            tydelig identitet. Formålet med nettsiden er at jeg fremstår som en 
+            attraktiv arbeidstaker.
+            <br><br>
+            Terminoppgaven skal leveres i to deler. Del 1 inneholder tidsplan, 
+            skisser over sidene mine og et flytkart. Mye av dette finner du her 
+            på denne siden. I del 2 skal jeg levere selve nettsiden. Den 
+            skal ha en hjemmeside og minst 5 undersider.
+            <br><br>
+            Sidene skal inneholde:</p>
+            <ul>
+              <li>En forside/hovedside som forklarer hensikten med nettsiden.</li>
+              <li>En side om terminoppgaven som viser plan, skisse og flytkart 
+                over nettsiden. (denne siden)</li>
+              <li>En side om meg selv på engelsk. På siden skal jeg skal ha et 
+                portrettbilde av meg selv, samt skrive om meg selv.</li>
+              <li>En side som viser min egen designmanual.</li>
+              <li>En porteføljeside med alt av mitt eget arbeid fra første termin.</li>
+              <li>En egenvalgt side som må inneholde medieelementer og tekst.</li>
+            </ul>
+        </div>
+        <div class="whitebox">
+          <div class="text">
+            <h1>Tidsplan</h1>
+            <p>En tidsplan er en plan som viser når hver aktivitet i et prosjekt 
+              skal starte og slutte.
+              <br><br>
+              Tidsplanens funksjon er å koordinere alle aktivitetene som skal 
+              gjennomføres til en helhetlig plan. Da hvet man alltid hva man skal 
+              jobbe med, og det blir betydelig enklere å realisere målet.
+              <br><br>
+              I min tidsplan...</p>
+          </div>
+          <div id="timeplan">
+            <img src="Bilder/terminoppgave_timeplan.jpg" alt="timeplan" title="Foto: August">
+          </div>
+        </div>
+        <div>
+          <div id="flytkart">
+            <img src="Bilder/terminoppgave_flytkart.jpg" alt="Flytkart">
+          </div>
+          <div class="text">
+            <h1>Flytkart/Sidekart</h1>
+            <p>Flytkart/sidekart er en oversikt i et format som både mennesker og 
+              datamaskiner enkelt kan lese, som skal fortelle søkemotoren hvilke 
+              sider som finnes på en nettside.
+              <br><br>
+              For søkemotorer blir det enklere å vite hva som er på en nettside og 
+              så bruke denne informasjonen i søkeresultatene.
+              <br><br>
+              Du kan se på et flytkart som et kart, bokstavelig talt, som viser 
+              viktige sider som er inne på nettsiden. Et sidekart vil også hjelpe 
+              søkemotoren til å vite hvilken side som er landingssiden.</p>
+          </div>
+        </div>
+        <div class="whitebox">
+          <div class="text">
+            <h1>Skisser over sidene</h1>
+            <p>I et større prosjekt er det viktig å planlegge hvordan nettsidene 
+              skal se ut. Adobe XD er en program som gjør det enklere å visualisere 
+              hvordan nettsiden kan se ut.</p>
+          </div>
+          <div id="skisser">
+            <iframe
+              src="Bilder/terminoppgave_skisser.pdf"
+              scrolling="auto"
+            ></iframe>
+          </div>
+        </div>
+      </div> <!--Her slutter content div-en-->
+
+      <div class="footer"> <!--Her begyner footer div-en-->
+        <div id="info">
+          <p>Kontaktinformasjon:</p>
+        </div>
+        <div id="info2">
+          <div>
+            <p>Telefon:</p>
+            <p>Epost:</p>
+          </div>
+          <div>
+            <p><a href="tel:+4799558477">+47 995 58 477</a></p>
+            <p><a href="mailto:augustbrynsrud@gmail.com">augustbrynsrud@gmail.com</a></p>
+          </div>
+        </div>
+      </div> <!--Her slutter footer div-en-->
+
+    </div> <!--Her slutter termin div-en og innpaknings div-en-->
+  </body> <!--her slutter body-en-->
+</html>

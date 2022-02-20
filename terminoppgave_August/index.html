@@ -1,0 +1,87 @@
+
+
+<!DOCTYPE html>
+<html>
+
+  <head> <!--Her begyner head-elementet som inneholder all metadata som ikke skal vises på netsiden-->
+    <meta charset="utf-8"> <!--definerer tegnsettet som brukes-->
+    <meta name="author" content="August Brynsrud"> <!--forteller nettleseren hvem som har laget sidens-->
+    <meta name="description" content="Super kul nettside"> <!--gir nettleseren en beskrivelse av nettsiden-->
+    <meta name="keywords" content="personal"/> <!--hjelper søkemotoren til å vite hva som er på siden, noe den kan bruke når andre søker seg fram til nettsiden din-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--dette gjør at siden er kompatibel med tiligere microsoft edge versoner som IE8 og IE9-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--dette gir nettleseren instruksjoner om hvordan den skal kontrollerer sidens dimensjoner og skalering. -->
+    <meta name="robots" content="unavailable_after: 2022-06-17"><!--dete forteler søkemotoren at den ikke skal promotere nettsiden min etter 17.06.2022 som er siste skoledag i vg1(siden har ikke domene så det endrer egentlig ingen ting)-->
+    <title>Hjemmeside - August</title> <!--dette er titelen på siden, du kan se titelen i fanen på nettleseren-->
+    <link href="../style.css" rel="stylesheet" type="text/css" /> <!--dette binder html dokumentet til css dokumentet-->
+    <meta name="rating" content="adult" /><!--flager netsiden min som "adult content"-->
+    <meta name="googlebot" content="translate" /> <!--gir brukeren muligheten å oversette siden gjennom google translate(tror dette er standard, men la det inn likevell)-->
+    <link rel="shortcut icon" type="image/x-icon" href="Bilder/Logo_August.svg" /> <!--dette er favicon-et til netsiden, favicon er den lille logoen ved siden av titelen på siden i browser tab-en-->
+  </head> <!--her slutter head-elementet-->
+
+  <body> <!--her begyner body-en alt som skal vises på en nettside må innenfor body-en-->
+    <div class="hjem innpakning">  <!--Her begyner hjem div-en og innpaknings div-en som dekker helle hjem siden-->
+
+      <div class="nav"> <!--Her begyner nav div-en-->
+        <a href="index.html">
+          <img src="Bilder/Logo_August.svg" alt="Logo">
+
+        <a href="index.html" id="index" id="active">Hjemmeside</a>
+        <a href="termin.html" id="termin">Terminoppgaven</a>
+        <a href="design.html" id="design">Designmanual</a>
+        <a href="portefolje.html" id="portefolje">Pørtefølje</a>
+        <a href="medie.html" id="medie">Medieelementer</a>
+        <a href="about.html" id="about">About me</a>
+      </div> <!--Her slutter nav div-en-->
+
+      <div class="header"> <!--Her begyner header div-en-->
+        insert kul header
+      </div> <!--Her slutter header div-en-->
+
+      <div class="content"> <!--Her begyner content div-en-->
+        <div class="whitebox">
+          <div class="text">
+            <h1>Kort om meg</h1>
+            <p>Jeg er en 16 år gammel gutt, som er veldig interessert i IT-utvikling. Konseptet koding har alltid 
+              fascinert meg. Hele livet har jeg alltid likt å spille, og jeg har laget spill i programmer som 
+              scratch og Sketch nation create, og senere oppdaget jeg Coding with Chrome på ungdomskolen. Da kodet 
+              jeg hver ettermiddag i flere måneder. Jeg ønsker å få en utdanning som vil gi meg en relevant jobb 
+              innen IT-utvikling.</p>
+              
+              <script type="text/javascript">/*koden er hentet fra en tutorial på https://stackoverflow.com/questions/22402777/html-javascript-button-click-counter*/
+
+                var clicks = 0;
+                function hello() {
+                    clicks++;
+                    document.getElementById("clicks").innerHTML = clicks;
+                };
+                </script>
+                <p>Kjeder du deg? Spill mitt nye, og orginale spill!</p>
+                <button type="button" onclick="hello()">Click me</button>
+                <p>Clicks: <a id="clicks">0</a></p>
+
+          </div>
+          <div class="img">
+            <iframe src="https://www.google.com/maps/embed/v1/search?q=Ole%20Moes%20vei%2015%2C%20Oslo%2C%20Norway&key=AIzaSyBm-aSQh-rGE3OsRa4fb7ZsLtNRrRDpjy4" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"  alt="Kart som viser hvor jeg bor"></iframe>
+          </div>
+        </div>
+      </div> <!--Her slutter content div-en-->
+
+      <div class="footer"> <!--Her begyner footer div-en-->
+        <div id="info">
+          <p>Kontaktinformasjon:</p>
+        </div>
+        <div id="info2">
+          <div>
+            <p>Telefon:</p>
+            <p>Epost:</p>
+          </div>
+          <div>
+            <p><a href="tel:+4799558477">+47 995 58 477</a></p>
+            <p><a href="mailto:augustbrynsrud@gmail.com">augustbrynsrud@gmail.com</a></p>
+          </div>
+        </div>
+      </div> <!--Her slutter footer div-en-->
+
+    </div> <!--Her slutter hjem div-en og innpaknings div-en-->
+  </body> <!--her slutter body-en-->
+</html>
